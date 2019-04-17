@@ -1,7 +1,7 @@
 A constantly changing set of my home dir configuration files.
 
 
-### Prerequisites
+## Prerequisites
 
 In order to use, GNU stow is required.
 
@@ -12,7 +12,7 @@ Other packages that are configured by this repo:
     sudo apt-get install bash google-chrome conky mc tilix tmux
 
 
-### Installation
+## Installation
 
 After cloning the repo, use GNU stow to create the necessary symlinks.
 
@@ -21,3 +21,12 @@ After cloning the repo, use GNU stow to create the necessary symlinks.
     stow bash chrome conky fonts mc tilix tmux  # Or whatever packages you want
 
 
+## My terminal toolchain
+
+For my shell, I use bash. [Bash-it](https://github.com/Bash-it/bash-it) adds a bunch of useful aliases, autocompletion, and other scripts, and [Pureline](https://github.com/chris-marsh/pureline) provides a nice clean informational prompt.
+
+For a tiling terminal I use [Tilix](https://gnunn1.github.io/tilix-web/).
+
+For terminal multiplexing I use [tmux](https://github.com/tmux/tmux/wiki).
+
+And for file management, [Midnight Commander](https://midnight-commander.org/). After all these years, orthodox file managers are still the most efficient way I've found to manage files. 
