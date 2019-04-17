@@ -1,5 +1,17 @@
 A constantly changing set of my home dir configuration files.
 
+
+### Prerequisites
+
+In order to use, GNU stow is required.
+
+    sudo apt-get install stow
+
+Other packages that are configured by this repo:
+
+    sudo apt-get install bash google-chrome conky mc tmux
+
+
 ### Installation
 
 After cloning the repo, use GNU stow to create the necessary symlinks.
