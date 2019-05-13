@@ -187,6 +187,11 @@ source "$BASH_IT"/bash_it.sh
 if [ "$TERM" != "linux" ]; then
     source ~/.pureline/pureline ~/.pureline.conf
 fi
+
+# Ruby 
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+
+# fasd
+eval "$(fasd --init bash-ccomp bash-ccomp-install posix-alias)"
