@@ -1,0 +1,15 @@
+[user]
+	name = Darryl Anderson
+	email = 6097929+darrylanderson@users.noreply.github.com
+
+[core]
+	autocrlf = input
+
+[alias]
+	l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+	prune = fetch --prune
+	stash-all = stash save --include-untracked
+	conflicts = diff --name-only --diff-filter=U
+
+[diff "sopsdiffer"]
+	textconv = sops -d
