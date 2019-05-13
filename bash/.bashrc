@@ -195,3 +195,6 @@ export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 
 # fasd
 eval "$(fasd --init bash-ccomp bash-ccomp-install posix-alias)"
+alias j='fasd_cd -d'  # Use j to jump to directory
+alias v='f -e vi'    # Quick open file in vim
+
