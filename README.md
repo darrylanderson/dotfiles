@@ -9,7 +9,7 @@ In order to use, GNU stow is required.
 
 Other packages that are configured by this repo:
 
-    sudo apt-get install bash google-chrome conky mc tilix tmux
+    sudo apt-get install bash google-chrome conky mc tilix tmux vim
 
 
 ## Installation
@@ -23,12 +23,12 @@ After cloning the repo, use GNU stow to create the necessary symlinks.
 
 ## My terminal toolchain
 
-For my shell, I use bash. [Bash-it](https://github.com/Bash-it/bash-it) adds a bunch of useful aliases, autocompletion, and other scripts, and [Pureline](https://github.com/chris-marsh/pureline) provides a nice clean informational prompt.
+For my shell, I use bash. [Bash-it](https://github.com/Bash-it/bash-it) adds a bunch of useful aliases, autocompletion, and other scripts, and [Pureline](https://github.com/chris-marsh/pureline) provides a nice clean informational prompt. [Fasd](https://github.com/clvv/fasd) helps with quick access to recently used files and directories.
 
 For a tiling terminal I use [Tilix](https://gnunn1.github.io/tilix-web/).
 
 For terminal multiplexing I use [tmux](https://github.com/tmux/tmux/wiki). Why not use tmux instead of Tilix for all tiling? Mainly because of the scrollback buffer. Pressing "ctrl-b [" to start scrolling still isn't part of my muscle memory like shift-pgup. But resumable sessions (especially with ssh) are a must-have, so tmux still has a place here.
 
-And for file management, [Midnight Commander](https://midnight-commander.org/). After all these years, orthodox file managers are still the most efficient way I've found to manage files. 
+And for file management, [Midnight Commander](https://midnight-commander.org/). After all these years, orthodox file managers are still the most efficient way I've found to manage files.
 
 All colors are based off of the JetBrains Darcula color palette.
