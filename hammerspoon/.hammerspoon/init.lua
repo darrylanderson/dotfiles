@@ -8,6 +8,9 @@ hs.hotkey.bind(hyper, "0", function()
 end)
 hs.notify.new({title="Hammerspoon", informativeText="Config loaded"}):send()
 
+-- Get rid of the annoyingly slow animations in osx
+hs.window.animationDuration = 0
+
 -- Lock screen
 hs.hotkey.bind(hyper, 'l', function()
   hs.caffeinate.lockScreen()
@@ -27,6 +30,5 @@ for key,app in pairs(applicationKeys) do
 end
 
 -- Window management
-hs.window.animationDuration = 0
 require("tiling")
 
