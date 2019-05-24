@@ -13,7 +13,7 @@ hs.window.animationDuration = 0
 
 -- Lock screen
 hs.hotkey.bind(hyper, 'l', function()
-  hs.caffeinate.lockScreen()
+  hs.caffeinate.startScreensaver()
 end)
 
 -- App launchers
