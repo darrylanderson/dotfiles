@@ -19,7 +19,7 @@ end)
 -- App launchers
 local applicationKeys = {
   c = 'Google Chrome',
-  j = 'IntelliJ IDEA',
+  i = 'IntelliJ IDEA',
   t = 'iTerm',
   s = 'Slack',
   f = 'Finder'
