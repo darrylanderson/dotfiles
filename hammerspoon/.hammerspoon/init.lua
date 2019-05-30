@@ -20,7 +20,6 @@ end)
 local applicationKeys = {
   c = 'Google Chrome',
   i = 'IntelliJ IDEA',
-  t = 'iTerm',
   s = 'Slack',
   f = 'Finder'
 }
@@ -29,6 +28,19 @@ for key,app in pairs(applicationKeys) do
     hs.application.launchOrFocus(app)
   end)
 end
+
+-- Launch a new iTerm window on current screen
+function findOrLaunch(a)
+  local app = hs.application.find(a)
+  if not app then
+    hs.application.launchOrFocus(a)
+  end
+  return hs.application.find(a)
+end
+hs.hotkey.bind(hyper, "t", function()
+  myTerm = findOrLaunch("iterm")
+  myTerm:selectMenuItem({"Shell","New Window"}) 
+end)
 
 -- Window management
 require("tiling")
