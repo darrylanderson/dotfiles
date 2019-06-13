@@ -36,5 +36,5 @@ All colors are based off of the JetBrains Darcula color palette.
 
 ## My work (OSX) terminal toolchain
 
-At work, I use OSX. My terminal is iTerm2, along with zsh. I also use Hammerspoon to help out with window management and launching apps. 
+At work, I use OSX. My terminal is iTerm2, along with zsh. I also use Hammerspoon to help out with window management and launching apps. For Hammerspoon to work, I use Karabiner to bind the CAPSLOCK key to act as though command-option-control-shift are all pressed at once. Then I can just do things like CAPSLOCK+rightarrow to snap a window to the right. 
 
