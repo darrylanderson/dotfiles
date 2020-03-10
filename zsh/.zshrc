@@ -12,7 +12,7 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 POWERLEVEL9K_MODE="nerdfont-complete"
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(time dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status aws kubectlcontext background_jobs rbenv)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status aws kubectlcontext background_jobs)
 #POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 #POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=''
 #POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="%F{014}\u2570%F{014}\uF460 "
@@ -56,3 +56,13 @@ export GOROOT=/usr/local/opt/go/libexec
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin
 export TERM=xterm-256color
+export AWS_PROFILE_ASSUME_ROLE="iam"
+
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
+export NVM_DIR="/Users/danderson/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+eval "$(rbenv init -)"
+
+source $(which assume-role)

@@ -45,3 +45,6 @@ end)
 -- Window management
 require("tiling")
 
+-- When osx borks all the windows after disconnecting a monitor, rescue them
+local rescueWindows = require "rescuewindows"
+hs.hotkey.bind(hyper, "r", rescueWindows)
