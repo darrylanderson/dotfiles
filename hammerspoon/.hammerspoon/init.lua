@@ -43,7 +43,15 @@ hs.hotkey.bind(hyper, "t", function()
 end)
 
 -- Window management
-require("tiling")
+--require("tiling")
+hs.loadSpoon("MiroWindowsManager")
+spoon.MiroWindowsManager:bindHotkeys({
+  up = {hyper, "up"},
+  right = {hyper, "right"},
+  down = {hyper, "down"},
+  left = {hyper, "left"},
+  fullscreen = {hyper, "f"}
+})
 
 -- When osx borks all the windows after disconnecting a monitor, rescue them
 local rescueWindows = require "rescuewindows"
