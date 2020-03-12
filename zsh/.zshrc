@@ -65,4 +65,10 @@ export NVM_DIR="/Users/danderson/.nvm"
 
 eval "$(rbenv init -)"
 
+alias ls='lsd'
+alias l='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+alias lt='ls --tree'
+
 source $(which assume-role)
